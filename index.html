@@ -43,12 +43,14 @@
       let debugMode = url.searchParams.get("debug") || false;
       let hide = url.searchParams.get("hide") || false;
       let controls = url.searchParams.get("controls") && 1 || 0;
+      let autoplay = 0 if controls == 1 else 1;
 
       // Hide/Show the title area
       hide ? (document.querySelector("#player").style.display = "none") : null;
 
       debug(`insert : videoID = ${songID} | listID = ${listID}`);
       debug(`control: ${controls}`);
+      debug(`autoplay: ${autoplay}`);
 
       function onYouTubeIframeAPIReady() {
         const player = new YT.Player("player", {
@@ -56,7 +58,7 @@
           height: height,
 
           playerVars: {
-            autoplay: 1, // Auto-play the video on load
+            autoplay: autoplay, // Auto-play the video on load
             controls: controls, // Show pause/play buttons in player
             showinfo: 0, // Hide the video title
             modestbranding: 1, // Hide the Youtube Logo
