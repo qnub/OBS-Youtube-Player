@@ -4,7 +4,7 @@ Designed for OBS Browser source to display/play a song/playlist fully automaticl
 
 ## Usage : add ? at the end of the link and copy Youtube link from "watch?v=XXXXX" or "watch?v=XXXXX&list=XXXXX")
 
-exemple : https://hopollo.github.io/OBS-Youtube-Player/?watch?v=lSqnqSSXTUI&list=RDlSqnqSSXTUI&volume=10&random=true&loop=true
+exemple : https://qnub.github.io/OBS-Youtube-Player/?watch?v=lSqnqSSXTUI&list=RDlSqnqSSXTUI&volume=10&random=true&loop=true
 
 ## Tutorial (video with subtitles instructions): https://youtu.be/y8VerA88A6U
 
@@ -19,12 +19,12 @@ exemple : https://hopollo.github.io/OBS-Youtube-Player/?watch?v=lSqnqSSXTUI&list
  **loop:** Loop video/playlist when finished : &loop=true|false (default is true)\
  **random:** Randomize next song on playlist : &random=true|false (default is true)\
  **fade:** Enable the volume fade on song start & end : &fade=true|false (default is true)\
+ **cintrols:** Enable video controls : &controls=0|1 (0 is false)
  **debug:** Enable debug mode & show info on console : &debug=true|false (default is false)
 
 ## Built-in features by default :
 
 autoplay = enabled,
-Video controls (play,next, etc..) = hidden,
 Fullscreen button = hidden,
 Video info = hidden,
 Loop mode = enabled,
