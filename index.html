@@ -48,6 +48,7 @@
       hide ? (document.querySelector("#player").style.display = "none") : null;
 
       debug(`insert : videoID = ${songID} | listID = ${listID}`);
+      debug(`control: ${controls}`);
 
       function onYouTubeIframeAPIReady() {
         const player = new YT.Player("player", {
