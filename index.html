@@ -171,6 +171,9 @@
         }
 
         function onAir() {
+          if controls == 1 {
+            return;
+          }
           debug(`On air : ${player.playerInfo.videoData.title} by ${
             player.playerInfo.videoData.author
           }
